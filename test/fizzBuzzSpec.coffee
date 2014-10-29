@@ -32,3 +32,8 @@ describe 'FizzBuzz', ->
 	it 'should say Buzz if is divisible by 5', ->
 		expect(fizzbuzz.say(5)).to.be.equal("Buzz")
 
+	it 'should say FizzBuzz if divisible by 15', ->
+		expect(fizzbuzz.say(15)).to.be.equal("FizzBuzz")
+
+	it 'should say the number if its not divisible by 15, 5 or 3', ->
+		expect(fizzbuzz.say(1)).to.equal(1)

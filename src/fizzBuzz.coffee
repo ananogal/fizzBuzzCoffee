@@ -12,9 +12,13 @@ class FizzBuzz
 		number % divisor == 0 
 
 	say: (number) ->
-		if( @isDivisibleByThree(number))
-			return "Fizz" 
-	 if(@isDivisibleByFive(number))
-				return "Buzz"
-
+		if(@isDivisibleByFifteen(number))
+			return 'FizzBuzz'
+		if(@isDivisibleByThree(number))
+			return 'Fizz' 
+		if(@isDivisibleByFive(number))
+			return 'Buzz'
+		return number
+	 	
+	 	
 module.exports = FizzBuzz
